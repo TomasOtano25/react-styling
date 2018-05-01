@@ -1,15 +1,8 @@
-import Radium from "radium";
 import React from "react";
 import PropTypes from "prop-types";
-import classNames  from 'classnames'
+import classNames from "classnames";
 
 import styles from "./nav-styles";
-
-
-
-const getNextStyle = props => {
-  return props.hasNext ? styles.next : styles.nextHidden;
-};
 
 const Nav = props => {
   return (
@@ -29,4 +22,4 @@ Nav.proptypes = {
   onNext: PropTypes.func.isRequired
 };
 
-export default Radium(Nav);
+export default Nav;
