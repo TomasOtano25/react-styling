@@ -2,14 +2,12 @@ import Radium from "radium";
 import React from "react";
 import PropTypes from "prop-types";
 
-import styles from "./slide-styles";
-
 const Slide = props => {
   return (
-    <article style={[styles.root, props.style]}>
-      <img src={props.image} alt={props.title} style={styles.image} />
-      <footer style={styles.footer}>
-        <h2 style={styles.title}>{props.title}</h2>
+    <article className="dft__slide" style={props.style}>
+      <img src={props.image} alt={props.title} className="dft__slide__image" />
+      <footer className="dft__slide__footer">
+        <h2 className="dft__slide__footer__title">{props.title}</h2>
         <div>{props.children}</div>
       </footer>
     </article>

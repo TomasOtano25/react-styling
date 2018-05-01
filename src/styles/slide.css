@@ -1,0 +1,29 @@
+:root {
+    --footerHeight: 125px;
+}
+
+.dft__slide {
+    position: absolute;
+    top: 0;
+    transition: all .6s;
+}
+
+.dft__slide__image {
+    width: var(--imageWidth);
+}
+
+.dft__slide__footer {
+    position: absolute;
+    top: calc(var(--imageHeight) - var(--footerHeight));
+    color: #fff;
+    left: 0;
+    width: var(--imageWidth);
+    height: var(--footerHeight);
+    padding: 15px;
+    background-color: rgba(0,0,0,.3);
+    text-shadow: 1px 1px 0 rgba(0,0,0,.6);
+}
+
+.dft__slide__footer__title {
+    margin: 0 0 10px 0;
+}

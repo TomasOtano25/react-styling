@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Radium, { Style } from "radium";
-import configStyles from "./config-styles";
-import styles from "./app-styles";
 import Frame from "./frame";
 import Carousel from "./carousel";
 import Slide from "./slide";
 import Nav from "./nav";
 import image1 from "./images/image1.jpg";
 import image2 from "./images/image2.jpeg";
+
+import "./styles/index.css";
 
 class App extends Component {
   constructor(props) {
@@ -44,13 +44,13 @@ class App extends Component {
   }
 
   render() {
+    const imageWidth = 640;
     return (
       <Frame>
-        <Style rules={styles} />
         <Carousel
           showIndex={this.state.showIndex}
           nav={this.renderNav()}
-          width={configStyles.imageWidth}
+          width={imageWidth}
         >
           <Slide image={image1} title="Lorem">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque

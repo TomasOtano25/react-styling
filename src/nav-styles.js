@@ -1,5 +1,4 @@
 import Radium from "radium";
-import config from "./config-styles";
 
 const pulse = Radium.keyframes(
   {
@@ -18,7 +17,7 @@ const pulse = Radium.keyframes(
 
 const btn = {
   flex: 1,
-  height: config.imageHeight,
+  height: 420,
   background: "transparent",
   border: "none",
   color: "#fff",
