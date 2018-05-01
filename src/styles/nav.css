@@ -10,7 +10,7 @@
     }
 }
 
-.dft__nav {
+.root {
     position: absolute;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@
     display: flex;
 }
 
-.dft__nav__btn {
+.btn {
     flex: 1;
     height: var(--imageHeight);
     background: transparent;
@@ -34,19 +34,21 @@
     animation: pulse 3s 2s infinite;
 }
 
-.dft__nav__btn:hover {
+.btn:hover {
     transition: all 1s;
     color: #8c9ea3;
 }
 
-.dft__nav__btn--prev {
+.btn__prev {
+    composes: btn;
     text-align: left;
 }
 
-.dft__nav__btn--next {
+.btn__next {
+    composes: btn;
     text-align: right;
 }
 
-.dft__nav__btn--hidden {
+.btn__hidden {
     visibility: hidden;
 }

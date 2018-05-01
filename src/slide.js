@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import styles from "./styles/slide.css";
+
 const Slide = props => {
   return (
-    <article className="dft__slide" style={props.style}>
-      <img src={props.image} alt={props.title} className="dft__slide__image" />
-      <footer className="dft__slide__footer">
-        <h2 className="dft__slide__footer__title">{props.title}</h2>
+    <article className={styles.slide} style={props.style}>
+      <img src={props.image} alt={props.title} className={styles.image} />
+      <footer className={styles.footer}>
+        <h2 className={styles.title}>{props.title}</h2>
         <div>{props.children}</div>
       </footer>
     </article>

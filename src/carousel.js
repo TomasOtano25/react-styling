@@ -1,6 +1,8 @@
 import React, { Children, cloneElement } from "react";
 import PropTypes from "prop-types";
 
+import styles from "./styles/carousel.css";
+
 const renderSlide = props => {
   return Children.map(props.children, (slide, i) => {
     return cloneElement(slide, {
@@ -15,7 +17,7 @@ const renderSlide = props => {
 
 const Carousel = props => {
   return (
-    <div className="dft__carousel">
+    <div className={styles.root}>
       {renderSlide(props)}
       {props.nav}
     </div>

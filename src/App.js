@@ -6,7 +6,7 @@ import Nav from "./nav";
 import image1 from "./images/image1.jpg";
 import image2 from "./images/image2.jpeg";
 
-import styles from "./styles/index.css";
+import styles from "./styles/app.css";
 
 class App extends Component {
   constructor(props) {
