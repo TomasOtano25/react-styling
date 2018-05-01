@@ -49,6 +49,14 @@
     text-align: right;
 }
 
-.btn__hidden {
+.hidden {
     visibility: hidden;
+}
+
+.btn__hidden__prev {
+    composes: btn__prev hidden;
+}
+
+.btn__hidden__next {
+    composes: btn__next hidden;
 }
