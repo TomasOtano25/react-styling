@@ -2,15 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
-import styles from "./nav-styles";
-
 const Nav = props => {
   return (
-    <div style={styles.root}>
-      <button key="prev" className={classNames({"btn-prev" : true, "btn-prev-hidden" : !props.hasPrevious})} onClick={props.onPrevious}>
+    <div className="dft__nav">
+      <button key="prev" className={classNames({"dft__nav__btn" : true, "dft__nav__btn--prev" : true, "dft__nav__btn--hidden" : !props.hasPrevious})} onClick={props.onPrevious}>
         &#10094;
       </button>
-      <button key="next" className={classNames({"btn-next" : true, "btn-next-hidden": !props.hasNext})} onClick={props.onNext}>
+      <button key="next" className={classNames({"dft__nav__btn" : true, "dft__nav__btn--next": true, "dft__nav__btn--hidden": !props.hasNext})} onClick={props.onNext}>
         &#10095;
       </button>
     </div>

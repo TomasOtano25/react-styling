@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Radium, { Style } from "radium";
 import Frame from "./frame";
 import Carousel from "./carousel";
 import Slide from "./slide";

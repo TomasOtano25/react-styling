@@ -1,4 +1,3 @@
-import Radium from "radium";
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -20,4 +19,4 @@ Slide.propTypes = {
   title: PropTypes.string
 };
 
-export default Radium(Slide);
+export default Slide;
