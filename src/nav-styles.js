@@ -1,7 +1,6 @@
 import Radium from "radium";
 
-const pulse = Radium.keyframes(
-  {
+const pulse = Radium.keyframes({
     "0%": {
       transform: "scale3d(1,1,1)"
     },

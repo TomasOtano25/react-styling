@@ -1,0 +1,50 @@
+.btn-prev {
+    flex: 1;
+    height: 420px;
+    background: transparent;
+    border: none;
+    padding: 20px;
+    font-size: 50px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .6);
+    outline: 0;
+    cursor: pointer;
+    user-select: none;
+    animation: 4s 2s infinite;
+    color: #fff;
+    text-align: left;
+}
+
+.btn-prev:hover {
+    transition: all 1s;
+    color: #8c9ea3;
+}
+
+.btn-prev-hidden {
+    visibility: hidden;
+}
+
+.btn-next-hidden {
+    visibility: hidden;
+}
+
+
+.btn-next {
+    flex: 1;
+    height: 420px;
+    background: transparent;
+    border: none;
+    padding: 20px;
+    font-size: 50px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .6);
+    outline: 0;
+    cursor: pointer;
+    user-select: none;
+    animation: 4s 2s infinite;
+    text-align: right;
+    color: #fff;
+}
+
+.btn-next:hover {
+    transition: all 1s;
+    color: #8c9ea3;
+}
