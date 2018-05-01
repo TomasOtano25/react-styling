@@ -20,7 +20,6 @@ export default {
     textShadow: "1px 1px 0 rgba(0,0,0, .6)",
     fontFamily: "'Helvetica Neue', Helvetica, Aria, sans-serif",
     fontSize: 14,
-    lineHeight: "1.4rem",
     boxSizing: "border-box"
   },
   title: {

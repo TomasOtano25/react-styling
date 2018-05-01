@@ -1,3 +1,4 @@
+import Radium from "radium";
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -14,10 +15,10 @@ const getNextStyle = props => {
 const Nav = props => {
   return (
     <div style={styles.root}>
-      <button style={getPrevStyle(props)} onClick={props.onPrevious}>
+      <button key="prev" style={getPrevStyle(props)} onClick={props.onPrevious}>
         &#10094;
       </button>
-      <button style={getNextStyle(props)} onClick={props.onNext}>
+      <button key="next" style={getNextStyle(props)} onClick={props.onNext}>
         &#10095;
       </button>
     </div>
@@ -29,4 +30,4 @@ Nav.proptypes = {
   onNext: PropTypes.func.isRequired
 };
 
-export default Nav;
+export default Radium(Nav);
